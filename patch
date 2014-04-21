@@ -1,0 +1,12 @@
+Binary files minix_src_clean/.git/index and proj0/minix_src_clean/.git/index differ
+diff -ruNp minix_src_clean/servers/pm/exec.c proj0/minix_src_clean/servers/pm/exec.c
+--- minix_src_clean/servers/pm/exec.c	2013-02-15 03:18:14.000000000 -0800
++++ proj0/minix_src_clean/servers/pm/exec.c	2014-04-10 11:50:54.000000000 -0700
+@@ -199,6 +199,7 @@ vir_bytes vfs_newsp;
+ 	}
+ #endif /* USE_TRACE */
+ 
++	printf("executing... %s\n",rmp->mp_name);
+ 	/* Call kernel to exec with SP and PC set by VFS. */
+ 	r= sys_exec(rmp->mp_endpoint, (char *) vfs_newsp, rmp->mp_name, pc);
+ 	if (r != OK) panic("sys_exec failed: %d", r);

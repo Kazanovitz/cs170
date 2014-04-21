@@ -1,0 +1,11 @@
+1) I used the wget command to download minix because the image on the minix webpage for the most recent version wasn't working. I downloaded VirtualBox, I had to configure two settings before I was able to download the image on my virtual machine. I gave it 256mb of mem and 8 gb hard drive. Once the image was installed i logged into minix as root than rran setup used all of their default settings, then did a shutdown. After the installation, i had to delete the boot image from my virtual machine, then I was able to launch Minix.
+
+2)The guy who created minix was Andrew S Tennenbaum, initials ast. When you create a new user it copies ast over with the new name you specify.
+
+3) pkgin is the utility use pkgin install "package to download"
+
+4)make hdboot
+
+5)when booting, and when searching my files i haven't found "Minix 3.1.2a. Copyright"... anywhere. The Banner I do see after i boot is "Copyright (c) 2012, Vrije Universiteit, Amsterdam, The Netherlands" which is located in usr/src/sys/conf/copyright
+
+6)
